@@ -1,6 +1,6 @@
 package lambda;
 
-public interface MyInterface {
+public interface SampleInterface {
 
 	public void printMe(String string);
 

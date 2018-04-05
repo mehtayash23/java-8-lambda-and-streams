@@ -35,7 +35,7 @@ public class StreamExamples {
 		System.out.println(outputString.toString());
 
 		// Using stream
-		System.out.println(names.stream().collect(Collectors.joining("-")));
+		System.out.println(names.stream().collect(Collectors.joining(" - ")));
 	}
 
 	public static void filterNames(List<String> names) {
@@ -89,14 +89,28 @@ public class StreamExamples {
 
 	public static void main(String[] args) {
 		List<String> names = Arrays.asList("Joey", "Chandler", "Monica", "Pheobe", "Ross", "Rachael");
-		// System.out.println("Print the list");
-		// printCollection(names);
-		// toLowerCase(names);
-		// joinNames(names);
-		// filterNames(names);
-		// findFirstName(names);
-		// totalCharacters(names);
-		// printEachNameCount(names);
+		System.out.println("Print the list");
+		printCollection(names);
+
+		System.out.println("In lower case...");
+		toLowerCase(names);
+
+		System.out.println("Join names with ,");
+		joinNames(names);
+
+		System.out.println("Filter the list...");
+		filterNames(names);
+
+		System.out.println("Find first person from the list...");
+		findFirstName(names);
+
+		System.out.println("Total characters in the list...");
+		totalCharacters(names);
+
+		System.out.println("Total characters in each name...");
+		printEachNameCount(names);
+
+		System.out.println("Sort the list...");
 		sortTheList(names);
 	}
 }
