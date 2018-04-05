@@ -88,7 +88,7 @@ public class StreamExamples {
 	}
 
 	public static void main(String[] args) {
-		List<String> names = Arrays.asList("Joey", "Chandler", "Monica", "Pheobe", "Ross", "Rachael");
+		List<String> names = Arrays.asList("Joey", "Chandler", "Monica", "Phoebe", "Ross", "Rachel");
 		System.out.println("Print the list");
 		printCollection(names);
 
